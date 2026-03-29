@@ -1,0 +1,40 @@
+{
+  "rods": [
+    { "name": "Stick and String", "cost_amount": 0, "cost_type": "currency", "location": "Default", "luck": -50, "strength": 0, "expertise": 0, "attraction": 0, "big_catch": -100, "max_weight": 5 },
+    { "name": "Toy Rod", "cost_amount": 750, "cost_type": "currency", "location": "Coconut Bay", "luck": 0, "strength": 0, "expertise": 0, "attraction": 0, "big_catch": 0, "max_weight": 15 },
+    { "name": "Sturdy Wooden Rod", "cost_amount": 2000, "cost_type": "currency", "location": "Coconut Bay", "luck": 15, "strength": 0, "expertise": 5, "attraction": 20, "big_catch": 0, "max_weight": 30 },
+    { "name": "Sunleaf Rod", "cost_amount": 0, "cost_type": "reward", "location": "Sell 100 fish", "luck": 10, "strength": 5, "expertise": 10, "attraction": 20, "big_catch": 15, "max_weight": 250 },
+    { "name": "Slim Rod", "cost_amount": 10000, "cost_type": "currency", "location": "Coconut Bay", "luck": 20, "strength": 10, "expertise": 10, "attraction": 25, "big_catch": 20, "max_weight": 500 },
+    { "name": "Telescopic Rod", "cost_amount": 15000, "cost_type": "currency", "location": "Coconut Bay", "luck": 10, "strength": 15, "expertise": 15, "attraction": 10, "big_catch": 5, "max_weight": 2005 },
+    { "name": "Metallic Rod", "cost_amount": 15000, "cost_type": "currency", "location": "Coconut Bay", "luck": 0, "strength": 55, "expertise": 55, "attraction": 10, "big_catch": 10, "max_weight": 1000 },
+    { "name": "Darkwood Rod", "cost_amount": 25000, "cost_type": "currency", "location": "Tanglewood", "luck": 30, "strength": 10, "expertise": 10, "attraction": 30, "big_catch": 5, "max_weight": 1800 },
+    { "name": "Speedy Rod", "cost_amount": 55000, "cost_type": "currency", "location": "Crescent Isle", "luck": 1, "strength": 5, "expertise": 5, "attraction": 60, "big_catch": 0, "max_weight": 1500 },
+    { "name": "Fortunate Rod", "cost_amount": 75000, "cost_type": "currency", "location": "Crescent Isle", "luck": 100, "strength": 10, "expertise": 5, "attraction": 10, "big_catch": 65, "max_weight": 1500 },
+    { "name": "Alien Rod (Zomblorgian)", "cost_amount": 200000, "cost_type": "currency", "location": "Giuseppe's quest", "luck": 55, "strength": 10, "expertise": 10, "attraction": 45, "big_catch": 30, "max_weight": 32000 },
+    { "name": "Rustfang Rod", "cost_amount": 250000, "cost_type": "currency", "location": "Luxian Dunes", "luck": 70, "strength": 20, "expertise": 20, "attraction": 25, "big_catch": 35, "max_weight": 35000 },
+    { "name": "Runesteel Rod", "cost_amount": 700000, "cost_type": "currency", "location": "Vlad (NPC)", "luck": 90, "strength": 25, "expertise": 20, "attraction": 30, "big_catch": 40, "max_weight": 100000 },
+    { "name": "Rod of the Pharaoh", "cost_amount": 750000, "cost_type": "currency", "location": "Luxian Dunes", "luck": 222, "strength": 20, "expertise": 40, "attraction": -10, "big_catch": 35, "max_weight": 100000 },
+    { "name": "Rod of Perpetuity", "cost_amount": 0, "cost_type": "reward", "location": "Reach level 500", "luck": 150, "strength": 30, "expertise": 30, "attraction": 50, "big_catch": 10, "max_weight": 500000 }
+  ],
+  "lines": [
+    { "name": "Basic Line", "cost_amount": 0, "cost_type": "currency", "location": "Default", "luck": 0, "strength": 0, "expertise": 0, "attraction": 0, "big_catch": 0 },
+    { "name": "Aquamarine Line", "cost_amount": 100, "cost_type": "currency", "location": "Coconut Bay", "luck": 0, "strength": 0, "expertise": 0, "attraction": 5, "big_catch": 0 },
+    { "name": "Carbon Line", "cost_amount": 1000, "cost_type": "currency", "location": "Coconut Bay", "luck": 0, "strength": 7, "expertise": 7, "attraction": 0, "big_catch": 0 },
+    { "name": "Heavy Duty Line", "cost_amount": 4000, "cost_type": "currency", "location": "Crescent Isle", "luck": 0, "strength": 10, "expertise": 10, "attraction": 0, "big_catch": 10 },
+    { "name": "Flavored Line", "cost_amount": 10000, "cost_type": "currency", "location": "Tanglewood", "luck": 0, "strength": 0, "expertise": 0, "attraction": 0, "big_catch": 30 },
+    { "name": "Lucky Line", "cost_amount": 10000, "cost_type": "currency", "location": "Crescent Isle", "luck": 30, "strength": 0, "expertise": 0, "attraction": 0, "big_catch": 0 },
+    { "name": "Diamond Line", "cost_amount": 25000, "cost_type": "currency", "location": "Luxian Dunes", "luck": 25, "strength": 15, "expertise": 15, "attraction": 10, "big_catch": 0 },
+    { "name": "Fur of Cerberus", "cost_amount": 35000, "cost_type": "currency", "location": "Vlad (NPC)", "luck": 25, "strength": -5, "expertise": -15, "attraction": 20, "big_catch": 10 }
+  ],
+  "bobbers": [
+    { "name": "Basic Bobber", "cost_amount": 0, "cost_type": "currency", "location": "Default", "luck": 0, "strength": 0, "expertise": 0, "attraction": 0, "big_catch": 0 },
+    { "name": "Paulie's Bobber", "cost_amount": 0, "cost_type": "reward", "location": "Paulie's quest", "luck": 0, "strength": 0, "expertise": 5, "attraction": 5, "big_catch": 0 },
+    { "name": "Blue Bobber", "cost_amount": 100, "cost_type": "currency", "location": "Coconut Bay", "luck": 5, "strength": 0, "expertise": 0, "attraction": 0, "big_catch": 0 },
+    { "name": "Dud Bobber", "cost_amount": 1000, "cost_type": "currency", "location": "Crescent Isle", "luck": 5, "strength": 0, "expertise": 5, "attraction": 0, "big_catch": 0 },
+    { "name": "Feline Bobber", "cost_amount": 2000, "cost_type": "currency", "location": "Tanglewood", "luck": 5, "strength": 0, "expertise": 0, "attraction": 0, "big_catch": 10 },
+    { "name": "Ornamental Bobber", "cost_amount": 10000, "cost_type": "currency", "location": "Luxian Dunes", "luck": 10, "strength": 5, "expertise": 0, "attraction": 10, "big_catch": 0 },
+    { "name": "Lucky Bobber", "cost_amount": 10000, "cost_type": "currency", "location": "Luxian Dunes", "luck": 40, "strength": 0, "expertise": 0, "attraction": 0, "big_catch": 0 },
+    { "name": "Rainbow Slime Bobber", "cost_amount": 35000, "cost_type": "currency", "location": "Vlad (NPC)", "luck": 30, "strength": 10, "expertise": 0, "attraction": 10, "big_catch": 10 }
+  ]
+}
+
