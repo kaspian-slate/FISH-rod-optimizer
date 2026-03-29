@@ -10,7 +10,7 @@ A powerful desktop tool to find the perfect fishing gear combination. Stop guess
 ##  How to Run
 ### For Users (Fastest)
 1. Go to the [Releases](https://github.com/kaspian-slate/FISH-rod-optimizer/releases/tag/v1.0.0) page.
-2. Download `app.exe`.
+2. Download `Fish_Rod_Optimizer.exe`.
 3. Run and start optimizing! 
    *(Note: You may need to click "Run Anyway" if Windows Defender flags it as an unrecognized app.)*
 
