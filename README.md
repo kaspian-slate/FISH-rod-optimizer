@@ -1,6 +1,6 @@
 # FISH! Rod Optimizer
 
-A desktop tool to find the perfect fishing gear combination for FISH!, a VR-based fishing title based within the popular free to play game VRChat. Stop guessing which rod and bobber to use and let math do the work!
+Maximize Your Catch in FISH! Eliminate the guesswork from your VRChat fishing sessions. This optimizer analyzes every gear combination in the game to provide the mathematically superior loadout for your next big catch.
 
 ##  Features
 * **Custom Priority:** Rank stats like Luck, Strength, and Expertise, Attraction, Big Catch, and Max Weight.
