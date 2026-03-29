@@ -4,7 +4,7 @@ import itertools
 import os
 import sys
 
-# --- 1. BACKEND LOGIC ---
+# 1. BACKEND LOGIC
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
     try:
@@ -16,7 +16,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 def load_data():
-    # Use the helper to find the real path of the JSON
+    # Helper finds the real path of the JSON
     json_path = resource_path('fishing_data.json')
     
     if not os.path.exists(json_path):
@@ -37,7 +37,7 @@ def calculate_best_loadouts(data, weights, top_n=3, exclude_quests=False):
     lines = data['lines']
     bobbers = data['bobbers']
 
-    # Pre-filter lists to improve calculation speed and drop unwanted items
+    # Pre-filter lists improves calculation speed and drop unwanted items
     if exclude_quests:
         rods = [r for r in rods if not is_quest_or_reward(r)]
         lines = [l for l in lines if not is_quest_or_reward(l)]
@@ -65,7 +65,7 @@ def calculate_best_loadouts(data, weights, top_n=3, exclude_quests=False):
             "total_cost": rod['cost_amount'] + line['cost_amount'] + bobber['cost_amount'],
         })
 
-    # Guard clause in case filtering leaves us with no valid combinations
+    # Guard clause in case filtering leaves no valid combinations
     if not all_combinations:
         return []
 
@@ -87,7 +87,7 @@ def calculate_best_loadouts(data, weights, top_n=3, exclude_quests=False):
     return sorted(all_combinations, key=lambda x: x['score'], reverse=True)[:top_n]
 
 
-# --- 2. FRONTEND GUI LOGIC ---
+# 2. FRONTEND GUI LOGIC
 
 valid_stats = ["luck", "strength", "expertise", "attraction", "big_catch", "max_weight"]
 display_names = {
@@ -100,7 +100,7 @@ priority_dropdowns = []
 def update_priority_dropdowns(choice):
     num_stats = int(choice)
     
-    # 1. Save current selections before wiping the UI
+    # 1. Current selection saved before wiping the UI
     current_selections = [drop.get() for drop in priority_dropdowns]
     
     for widget in dynamic_frame.winfo_children():
@@ -117,7 +117,7 @@ def update_priority_dropdowns(choice):
         drop = ctk.CTkOptionMenu(row_frame, values=list(display_names.values()), font=main_font, dropdown_font=main_font)
         drop.pack(side="left", fill="x", expand=True)
         
-        # 2. Restore previous selection if it exists, else default
+        # 2. Previous selection restored if it exists, else default
         if i < len(current_selections):
             drop.set(current_selections[i])
         else:
@@ -139,7 +139,7 @@ def on_calculate_clicked():
     user_weights = {stat: 0.0 for stat in valid_stats}
     selected_keys = []
     
-    # Check the states of our toggles
+    # Toggle state check
     is_even_weight = even_weight_switch.get() == 1
     exclude_quests = exclude_quest_switch.get() == 1
     
@@ -149,7 +149,7 @@ def on_calculate_clicked():
         stat_key = reverse_names[sel]
         if stat_key not in selected_keys:
             selected_keys.append(stat_key)
-            # Apply equal weight (1.0) or cascading weight based on the toggle
+            # Applies equal weight (1.0) or cascading weight based on the toggle
             user_weights[stat_key] = 1.0 if is_even_weight else current_weight
             if not is_even_weight:
                 current_weight -= 1.0
@@ -226,7 +226,7 @@ def on_calculate_clicked():
         cost_lbl.pack(anchor="w", padx=15, pady=(0, 10))
 
 
-# --- 3. WINDOW SETUP & STYLING ---
+# 3. WINDOW SETUP & STYLING
 
 ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("blue") 
@@ -270,8 +270,7 @@ dynamic_frame = ctk.CTkFrame(settings_card, fg_color="transparent")
 dynamic_frame.pack(pady=(0, 5), fill="x")
 update_priority_dropdowns("3")
 
-# --- TOGGLES SECTION ---
-
+# TOGGLES SECTION
 SWITCH_STYLE = dict(
     switch_width=35,
     switch_height=16,
@@ -290,7 +289,6 @@ exclude_quest_switch.pack(side="left")
 
 legend_lbl = ctk.CTkLabel(settings_card, text="* obtained through quest line or received as a reward", font=ctk.CTkFont(size=12), text_color="gray60")
 legend_lbl.pack(pady=(0, 15), padx=25, anchor="w")
-# ----------------------------
 
 # CALCULATE BUTTON
 calc_btn = ctk.CTkButton(
