@@ -1,2 +1,18 @@
+# Python temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller folders (The "messy" stuff)
 build/
 dist/
+*.spec
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS specific files
+.DS_Store
+Thumbs.db
